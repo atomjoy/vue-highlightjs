@@ -131,6 +131,15 @@ class User extends Authenticatable
 ## Css line style
 
 ```css
+:root {
+	--font-family-code: 'Fira Code', monospace, consolas;
+	--code-font-size: 14px;
+	--code-border: #00339911;
+	--code-line-numbers: #6885ba;
+	--code-line-border: #ff2233aa;
+	--code-line-underline: #00339911;
+}
+
 code {
     font-size: var(--code-font-size);
 	font-family: var(--font-family-code);
