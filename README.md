@@ -198,3 +198,7 @@ code, code.hljs {
     line-height: 24px;
 }
 ```
+
+## Sample
+
+<img src="https://raw.githubusercontent.com/atomjoy/vue-highlightjs/main/highlightjs-vue.png" width="100%"/>
