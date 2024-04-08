@@ -14,16 +14,16 @@ npm install @highlightjs/vue-plugin
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scrollbar-thin">
 <head>
-  <!-- Highligt.js -->
-  <script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></script>
+	<!-- Highligt.js line numbers (delete if you dont need code line numbers) -->
+	<script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></script>	
+	<script type="text/javascript">
+		hljs.highlightAll();
+		hljs.initLineNumbersOnLoad({ startFrom: 1 });
+	</script>
+	<!-- Highligt.js (delete if you dont need code line numbers) -->
 
-  <script type="text/javascript">
-    hljs.highlightAll();
-    hljs.initLineNumbersOnLoad({ startFrom: 1 });
-  </script>
-
-  @vite('resources/css/app.css')
+	@vite('resources/css/app.css')
 </head>
   <body>
     <div id="app"></div>
