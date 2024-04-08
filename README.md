@@ -1,5 +1,5 @@
 # vue-highlightjs
-Vue3 higlightjs with line numbers.
+Vue3 highlightjs with line numbers.
 
 ## Instalacja
 
@@ -18,8 +18,10 @@ npm install @highlightjs/vue-plugin
 	<script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></script>	
 	<script type="text/javascript">
-		hljs.highlightAll();
-		hljs.initLineNumbersOnLoad({ startFrom: 1 });
+		window.onload = (event) => {
+			hljs.highlightAll();
+			hljs.initLineNumbersOnLoad({ startFrom: 1 });
+		}
 	</script>
 	<!-- Highligt.js (delete if you dont need code line numbers) -->
 
