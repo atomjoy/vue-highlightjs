@@ -32,7 +32,7 @@ npm install @highlightjs/vue-plugin
 </html>
 ```
 
-## Vue3 setup component
+## Vue3 setup highlightjs component
 
 ```vue
 <!-- CodeHighlight.vue -->
