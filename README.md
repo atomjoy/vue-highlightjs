@@ -15,12 +15,12 @@ npm install @highlightjs/vue-plugin
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scrollbar-thin">
 <head>
 	<!-- Highligt.js line numbers (delete if you dont need code line numbers) -->
-	<script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></script>	
-	<script type="text/javascript">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
+	<script type="text/javascript">		
 		window.onload = (event) => {
-			hljs.highlightAll();
-			hljs.initLineNumbersOnLoad({ startFrom: 1 });
+		    hljs.highlightAll();
+			    hljs.initLineNumbersOnLoad({ startFrom: 1 });
 		}
 	</script>
 	<!-- Highligt.js (delete if you dont need code line numbers) -->
