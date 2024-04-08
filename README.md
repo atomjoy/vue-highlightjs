@@ -128,7 +128,7 @@ class User extends Authenticatable
 </template>
 ```
 
-## Css line style
+## Css line style import in main.css
 
 ```css
 :root {
