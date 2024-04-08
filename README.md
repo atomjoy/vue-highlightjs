@@ -118,7 +118,6 @@ class User extends Authenticatable
     }
 }
 `
-
 </script>
 
 <template>    
