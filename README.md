@@ -19,8 +19,8 @@ npm install @highlightjs/vue-plugin
 	<script src="//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
 	<script type="text/javascript">		
 		window.onload = (event) => {
-		    hljs.highlightAll();
-			    hljs.initLineNumbersOnLoad({ startFrom: 1 });
+			hljs.highlightAll();
+			hljs.initLineNumbersOnLoad({ startFrom: 1 });
 		}
 	</script>
 	<!-- Highligt.js (delete if you dont need code line numbers) -->
