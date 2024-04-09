@@ -1,7 +1,6 @@
 <script setup>
 import CodeHighlight from '@/components/utils/CodeHighlight/CodeHighlight.vue'
 import CodeHighlightMini from '@/components/utils/CodeHighlight/CodeHighlightMini.vue'
-import TopMenu from '@/views/page/menu/TopMenu.vue'
 
 const code = `<?php
 
@@ -54,7 +53,6 @@ class User extends Authenticatable
 </script>
 
 <template>
-	<TopMenu />
 	<div class="section">
 		<CodeHighlightMini lang="php" :code="code" />
 		
