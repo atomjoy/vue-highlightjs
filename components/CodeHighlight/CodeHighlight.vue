@@ -46,8 +46,8 @@ function toggleTheme() {
 <template>
 	<div class="hljs-code-topbar">
 		<span class="hljs-code-filename"><i class="fa-regular fa-file-code"></i> {{ props.filename }}</span>
-		<button v-if="theme == ''" class="hljs-code-toggle-theme" @click="toggleTheme"><i class="fa-solid fa-toggle-off"></i></button>
-		<button v-else class="hljs-code-toggle-theme" @click="toggleTheme"><i class="fa-solid fa-toggle-on"></i></button>
+		<button v-if="theme == ''" class="hljs-code-toggle-theme" @click="toggleTheme"><i class="fa-solid fa-toggle-off"></i> Change </button>
+		<button v-else class="hljs-code-toggle-theme" @click="toggleTheme"><i class="fa-solid fa-toggle-on"></i> Change </button>
 	</div>
 	<highlightjs :class="theme" :code="props.code" :language="props.language" />
 </template>
