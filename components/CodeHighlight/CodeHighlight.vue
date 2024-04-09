@@ -23,6 +23,7 @@ import hljsVuePlugin from '@highlightjs/vue-plugin'
 const props = defineProps({
 	code: { default: '<?php echo "Insert code here...";' },
 	language: { type: String, default: 'php' },
+	theme: { type: String, default: '' },
 })
 
 const highlightjs = hljsVuePlugin.component
@@ -33,7 +34,7 @@ function debugCode(code, language = 'php') {
 	console.log(result)
 }
 
-const theme = ref('')
+const theme = ref(props.theme)
 
 function toggleTheme() {
 	theme.value == '' ? (theme.value = 'dark-theme') : (theme.value = '')
