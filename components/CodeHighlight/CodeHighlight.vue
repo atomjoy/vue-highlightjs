@@ -9,9 +9,11 @@ import 'highlight.js/styles/github.min.css'
 // import 'highlight.js/styles/isbl-editor-light.min.css'
 // import 'highlight.js/styles/ascetic.min.css'
 // import 'highlight.js/styles/mono-blue.min.css'
-
+// Custom light
+import './css/light/mozilla-light.css'
 // Dark set from current dir css
-import './css/dark/hybrid-dark.css'
+import './css/dark/mozilla-dark.css'
+// import './css/dark/hybrid-dark.css'
 // import './css/dark/an-old-hope-dark.css'
 // import './css/dark/atom-one-dark.css'
 // import './css/dark/atom-one-resonable-dark.css'
