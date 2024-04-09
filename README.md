@@ -1,6 +1,12 @@
 # vue-highlightjs
 Vue3 highlightjs with line numbers.
 
+## Toggle theme dark/light mode 
+
+```js
+import CodeHighlight from '@/components/utils/CodeHighlight/CodeHighlight.vue'
+```
+
 ## Instalacja
 
 ```sh
