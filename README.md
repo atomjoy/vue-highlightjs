@@ -5,13 +5,13 @@ Vue3 highlightjs with line numbers.
 
 ```vue
 <script setup>
-import CodeHighlight from '@/components/utils/CodeHighlight/CodeHighlight.vue'
+import CodeHighlight from '@/components/CodeHighlight/CodeHighlight.vue'
 </script>
 
 <template>
 	<CodeHighlight lang="php" :code="code" />
-	<CodeHighlight lang="php" :code="code" theme="dark-theme" />
 	<CodeHighlight lang="php" :code="code" filename="App\Models\User.php" />
+	<CodeHighlight lang="php" :code="code" theme="dark-theme" filename="App\Models\User.php" />
 <template>
 ```
 
@@ -89,7 +89,7 @@ function debugCode(code, language = "php") {
 
 ```vue
 <script setup>
-import CodeHighlightMini from '@/components/utils/CodeHighlight/CodeHighlightMini.vue';
+import CodeHighlightMini from '@/components/CodeHighlight/CodeHighlightMini.vue';
 
 const code = `<?php
 
