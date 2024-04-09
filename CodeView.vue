@@ -56,8 +56,8 @@ class User extends Authenticatable
 	<div class="section">
 		<CodeHighlightMini lang="php" :code="code" />
 		
-        <CodeHighlight lang="php" :code="code" filename="App\Models\User.php" />
+		<CodeHighlight lang="php" :code="code" filename="App\Models\User.php" />
 		
-        <!-- <CodeHighlight lang="php" :code="code" theme="dark-theme" filename="App\Models\User.php" /> -->
+		<!-- <CodeHighlight lang="php" :code="code" theme="dark-theme" filename="App\Models\User.php" /> -->
 	</div>
 </template>
