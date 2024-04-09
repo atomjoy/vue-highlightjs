@@ -1,6 +1,6 @@
 <script setup>
-import CodeHighlight from '@/components/utils/CodeHighlight/CodeHighlight.vue'
-import CodeHighlightMini from '@/components/utils/CodeHighlight/CodeHighlightMini.vue'
+import CodeHighlight from '@/components/CodeHighlight/CodeHighlight.vue'
+import CodeHighlightMini from '@/components/CodeHighlight/CodeHighlightMini.vue'
 
 const code = `<?php
 
