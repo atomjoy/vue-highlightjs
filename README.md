@@ -1,7 +1,7 @@
 # vue-highlightjs
 Vue3 highlightjs with line numbers.
 
-## Toggle theme dark/light mode component with css
+## Vue highlightjs component with toggle theme dark/light mode
 
 ```vue
 <script setup>
@@ -48,10 +48,11 @@ npm install @highlightjs/vue-plugin
 </html>
 ```
 
-## Vue3 setup highlightjs component
+## Vue3 highlightjs component (mini)
 
 ```vue
-<!-- CodeHighlight.vue -->
+<!-- CodeHighlightMini.vue -->
+
 <script setup>
 import 'highlight.js/styles/default.css'
 import 'highlight.js/styles/github.min.css'
@@ -78,13 +79,17 @@ function debugCode(code, language = "php") {
         :language="props.language"
     />
 </template>
+
+<style>
+@import url('./css/code.css');
+</style>
 ```
 
 ## Use component in vue
 
 ```vue
 <script setup>
-import CodeHighlight from '@/components/CodeHighlight.vue';
+import CodeHighlightMini from '@/components/utils/CodeHighlight/CodeHighlightMini.vue';
 
 const code = `<?php
 
@@ -138,81 +143,9 @@ class User extends Authenticatable
 
 <template>    
     <div class="section">
-        <CodeHighlight lang="php" :code="code"/>
+        <CodeHighlightMini lang="php" :code="code" />
     </div>
 </template>
-```
-
-## Css style line numbers (optional)
-
-```css
-:root {
-	--font-family-code: 'Fira Code', monospace, consolas;
-	--code-font-size: 14px;
-	--code-border: #00339911;
-	--code-line-numbers: #6885ba;
-	--code-line-border: #ff2233aa;
-	--code-line-underline: #00339911;
-}
-
-code {
-    font-size: var(--code-font-size);
-	font-family: var(--font-family-code);
-	border: 1px solid var(--code-border);		
-	padding: 20px !important;
-}
-
-pre {
-    margin: 20px 0px;
-}
-
-code, code.hljs {
-    padding: 10px !important;    
-    overflow: hidden !important;
-}
-
-/* for block of numbers */
-.hljs-ln {
-    float: left;
-    width: 100%;
-    font-size: var(--code-font-size);
-    font-family: 'JetBrains Mono', 'Fira Code', monospace, consolas;
-}
-
-.hljs-ln tbody {
-    float: left;
-    width: 100% !important;
-    border: 1px solid var(--code-border);
-}
-
-.hljs-ln tbody tr {
-    display: flex-table;
-    border-bottom: 1px solid var(--code-line-underline);
-}
-
-.hljs-ln-numbers {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    text-align: center;
-    color: var(--code-line-numbers);
-    border-right: 1px solid var(--code-line-border);
-    vertical-align: top;
-    padding: 5px 10px !important;
-
-    /* your custom style here */
-    /*min-width: 60px;*/
-}
-
-/* for block of code */
-.hljs-ln-code {
-    width: 100% !important;
-    padding-left: 10px !important;
-    line-height: 24px;
-}
 ```
 
 ## Sample
