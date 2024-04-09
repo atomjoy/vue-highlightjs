@@ -3,11 +3,15 @@ Vue3 highlightjs with line numbers.
 
 ## Toggle theme dark/light mode 
 
-```js
+```vue
+<script setup>
 import CodeHighlight from '@/components/utils/CodeHighlight/CodeHighlight.vue'
+</script>
 
-<CodeHighlight lang="php" :code="code" />
-<CodeHighlight lang="php" :code="code" theme="dark-theme" />
+<template>
+	<CodeHighlight lang="php" :code="code" />
+	<CodeHighlight lang="php" :code="code" theme="dark-theme" />
+<template>
 ```
 
 ## Instalacja
