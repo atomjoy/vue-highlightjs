@@ -1,7 +1,7 @@
 # vue-highlightjs
 Vue3 highlightjs with line numbers.
 
-## Toggle theme dark/light mode 
+## Toggle theme dark/light mode component with css
 
 ```vue
 <script setup>
@@ -143,7 +143,7 @@ class User extends Authenticatable
 </template>
 ```
 
-## Css line style import in main.css
+## Css style line numbers (optional)
 
 ```css
 :root {
