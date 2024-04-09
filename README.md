@@ -11,6 +11,7 @@ import CodeHighlight from '@/components/utils/CodeHighlight/CodeHighlight.vue'
 <template>
 	<CodeHighlight lang="php" :code="code" />
 	<CodeHighlight lang="php" :code="code" theme="dark-theme" />
+	<CodeHighlight lang="php" :code="code" filename="App\Models\User.php" />
 <template>
 ```
 
