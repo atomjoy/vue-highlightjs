@@ -5,6 +5,9 @@ Vue3 highlightjs with line numbers.
 
 ```js
 import CodeHighlight from '@/components/utils/CodeHighlight/CodeHighlight.vue'
+
+<CodeHighlight lang="php" :code="code" />
+<CodeHighlight lang="php" :code="code" theme="dark-theme" />
 ```
 
 ## Instalacja
